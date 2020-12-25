@@ -158,7 +158,7 @@ class CalendarHeader extends Component {
 
     return (
       <TouchableOpacity
-        onPress={!shouldDisable ? onPress : undefined}
+        onPressIn={!shouldDisable ? onPress : undefined}
         disabled={shouldDisable}
         style={this.style.arrow}
         hitSlop={{left: 20, right: 20, top: 20, bottom: 20}}
