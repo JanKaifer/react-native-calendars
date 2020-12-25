@@ -181,7 +181,7 @@ export default class BasicDay extends Component {
         style={this.getContainerStyle()}
         disabled={this.shouldDisableTouchEvent()}
         activeOpacity={activeOpacity}
-        onPress={!this.shouldDisableTouchEvent() ? this.onPress : undefined}
+        onPressIn={!this.shouldDisableTouchEvent() ? this.onPress : undefined}
         onLongPress={!this.shouldDisableTouchEvent() ? this.onLongPress : undefined}
         accessible
         accessibilityRole={this.isDisabled() ? undefined : 'button'}
